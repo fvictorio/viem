@@ -84,7 +84,7 @@ The following actions and utilities support type inference when you add a const 
 For example, `readContract`:
 
 ```ts
-const result = client.readContract({
+const result = await client.readContract({
   //  ^? const data: bigint | undefined
   address: '0xecb504d39723b0be0e3a9aa33d646642d1051ee1',
   abi: [
